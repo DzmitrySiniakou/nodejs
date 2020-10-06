@@ -98,7 +98,8 @@ export class EncodeStream extends Transform {
           const letterIndex = alphabet.indexOf(letter);
           if (letterIndex === -1) return letter;
 
-          const newLetterIndex = (letterIndex + this.shift * 2) % 52;
+          const newLetterIndex = (letterIndex + this.shift * 2 + 52) % 52;
+
           const encodedLetter = alphabet[newLetterIndex];
 
           return encodedLetter
