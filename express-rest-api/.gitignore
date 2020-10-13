@@ -19,6 +19,5 @@ npm-debug.*
 # Папка с собранными файлами проекта
 public/
 prod/
-build/
 bundle.js
 bundle.js.map
